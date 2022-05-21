@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+
+/* HEADER */
+
 .nav {
     width: 100%;
     height: 100px;
@@ -29,6 +32,10 @@
     right: 30%;
 
 }
+
+
+
+/* COUNTDOWN */
 
 .seccount {
     width: 100%;
@@ -71,4 +78,83 @@
 .simply-word {
     font-weight: 300;
     font-size: 30px;
+}
+
+
+
+/* CONTACT FORM  */
+
+#overlay {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/golden-liquid-bubbles.jpg);
+    background-size: cover;
+    padding-top: 80px;
+
+}
+
+form {
+    max-width: 550px;
+    width: 90%;
+    margin: 17vh auto 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+
+
+}
+
+form h1 {
+    margin: 0;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 20px 0;
+
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #D3D3D3;
+
+}
+
+input[type="text"]:focus {
+    border-bottom: 1px solid rgb(255, 0, 106);
+}
+
+.center {
+    text-align: center;
+}
+
+input[type="submit"] {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: linear-gradient(to right, rgb(255, 0, 106), rgb(255, 67, 61));
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.error {
+    color: red;
+}
+
+.error-border {
+    border-bottom: 1px solid red;
+}
+
+#success {
+
+    color: #28A745;
 }
