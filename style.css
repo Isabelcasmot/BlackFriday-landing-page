@@ -28,8 +28,47 @@ h1 {
     bottom: 15px;
     right: 30%;
 
+}
 
+.seccount {
+    width: 100%;
+    min-height: 50vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: .5 ease-out all;
+}
 
+.count {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 
+}
 
+.simply-section {
+
+    background-color: hsl(0, 5%, 96%);
+    width: 180px;
+    height: 180px;
+    margin: 0 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.simply-amount {
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.simply-word {
+    font-weight: 300;
+    font-size: 30px;
 }
