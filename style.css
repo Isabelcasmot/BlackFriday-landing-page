@@ -1,37 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+/* font-family: 'Montserrat', sans-serif; */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
 
 /* HEADER */
+
+/* NAV BAR */
+
 
 .nav {
     width: 100%;
     height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
     background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+
 }
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 100px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 100px;
+    text-transform: uppercase;
+    width: max-content;
+
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu-link:hover {
+    background-color: #D3D3D3;
+    transition: 0.5s;
+
+}
+
+.nav-toggle {
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 80px;
+    display: none;
+    cursor: pointer;
+
+}
+
+
+
+/* HERO */
+
 
 .hero {
     width: 100%;
     height: 600px;
+    margin-top: 100px;
+    display: flex;
     background-color: #FFF5ED;
-    background-image: url(./img/Black-Friday-Sale-PNG-Pic.png);
-    background-size: 55% 150%;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
+
+
 
 
 }
 
-.hero h1 {
-    position: absolute;
-    bottom: 15px;
-    right: 30%;
+.hero-img {
+    width: 70%;
+    height: 100%;
+    padding: 0 50px;
+
 
 }
+
+.hero img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-text {
+
+    width: 50%;
+    text-align: left;
+    padding: 160px 10px;
+}
+
+
+.hero-text h1 {
+    font-size: 65px;
+    font-family: 'Montserrat', sans-serif;
+    ;
+}
+
+.hero-text h1 span {
+    font-size: 80px;
+    color: rgb(255, 0, 106);
+}
+
+
 
 
 
@@ -49,11 +152,17 @@
     transform: .5 ease-out all;
 }
 
+.seccount h2 {
+    font-size: 30px;
+    padding-top: 100px;
+}
+
 .count {
     display: flex;
     justify-content: center;
     margin-top: 100px;
     margin-bottom: 100px;
+
 
 }
 
@@ -67,6 +176,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px solid rgb(255, 0, 106);
 }
 
 .simply-amount {
@@ -78,6 +188,22 @@
 .simply-word {
     font-weight: 300;
     font-size: 30px;
+}
+
+.shop {
+
+    margin-top: 10px;
+    margin-bottom: 100px;
+    width: 90%;
+    max-width: 200px;
+    height: 60px;
+    border: none;
+    background: linear-gradient(to right, rgb(255, 0, 106), rgb(255, 67, 61));
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 5px;
+
 }
 
 
@@ -162,3 +288,287 @@ input[type="submit"] {
 
     color: #28A745;
 }
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+/* MEDIA QUERYS */
+
+
+@media (max-width:768px) {
+
+    .nav {
+
+        height: 80px;
+
+
+    }
+
+
+
+    .logo {
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 80px;
+
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #fff;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% -60px);
+        overflow-y: auto;
+        position: fixed;
+        left: 0;
+        top: 60px;
+
+        left: 100%;
+        transition: left 0.3s;
+
+    }
+
+    .nav-menu-item {
+        line-height: 80px;
+    }
+
+
+    .nav-menu-link:hover {
+        background-color: #FFF5ED;
+        transition: 0.5s;
+
+    }
+
+    .nav-toggle {
+
+        display: block;
+
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+
+
+    .hero {
+        width: 100%;
+        height: 600px;
+        margin-top: 50px;
+        background-color: #FFF5ED;
+        background-image: url(./img/Black-Friday-Sale-PNG-Pic.png);
+        background-size: 55% 150%;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: none;
+
+
+    }
+
+    .hero-img {
+        width: 70%;
+        height: 100%;
+        padding: 0 50px;
+
+
+    }
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-text {
+
+        width: 50%;
+        text-align: left;
+        padding: 160px 10px;
+    }
+
+
+    .hero-text h1 {
+        font-size: 65px;
+        font-family: 'Montserrat', sans-serif;
+        ;
+    }
+
+    .hero-text h1 span {
+        font-size: 80px;
+        color: rgb(255, 0, 106);
+    }
+
+
+
+
+
+    /* COUNTDOWN */
+
+    .seccount {
+        width: 100%;
+        min-height: 50vh;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transform: .5 ease-out all;
+    }
+
+    .seccount h2 {
+        font-size: 30px;
+        padding-top: 100px;
+    }
+
+    .count {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+
+    }
+
+    .simply-section {
+
+        background-color: hsl(0, 5%, 96%);
+        width: 180px;
+        height: 180px;
+        margin: 0 20px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgb(255, 0, 106);
+    }
+
+    .simply-amount {
+        display: block;
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .simply-word {
+        font-weight: 300;
+        font-size: 30px;
+    }
+
+    .shop {
+
+        margin-top: 10px;
+        margin-bottom: 100px;
+        width: 90%;
+        max-width: 200px;
+        height: 60px;
+        border: none;
+        background: linear-gradient(to right, rgb(255, 0, 106), rgb(255, 67, 61));
+        color: white;
+        font-size: 17px;
+        cursor: pointer;
+        border-radius: 5px;
+
+    }
+
+
+
+    /* CONTACT FORM  */
+
+    #overlay {
+        width: 100%;
+        height: 100vh;
+        background-image: url(./img/golden-liquid-bubbles.jpg);
+        background-size: cover;
+        padding-top: 80px;
+
+    }
+
+    form {
+        max-width: 550px;
+        width: 90%;
+        margin: 17vh auto 0 auto;
+        background-color: white;
+        padding: 40px;
+        border-radius: 3px;
+        box-sizing: border-box;
+
+
+    }
+
+    form h1 {
+        margin: 0;
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin: 20px 0;
+
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        outline: none;
+        resize: none;
+        border: none;
+        border-bottom: 1px solid #D3D3D3;
+
+    }
+
+    input[type="text"]:focus {
+        border-bottom: 1px solid rgb(255, 0, 106);
+    }
+
+    input[type="tel"]:focus {
+        border-bottom: 1px solid rgb(255, 0, 106);
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    input[type="submit"] {
+        margin-top: 30px;
+        width: 90%;
+        max-width: 200px;
+        background: linear-gradient(to right, rgb(255, 0, 106), rgb(255, 67, 61));
+        color: white;
+        font-size: 17px;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .error {
+        color: red;
+    }
+
+    .error-border {
+        border-bottom: 1px solid red;
+    }
+
+    #success {
+
+        color: #28A745;
+    }
+
+    footer {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        line-height: 50px;
+
+    }

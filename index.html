@@ -5,16 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/b4a6562968.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
+
+    <nav class="nav">
+        <a href="#" class="logo">LOGO</a>
+        <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
+        <ul class="nav-menu nav-menu_visible ">
+            <li class="nav-menu-item"><a href="#" class="nav-menu-link">Blog</a></li>
+            <li class="nav-menu-item"><a href="#" class="nav-menu-link  ">Video</a></li>
+            <li class="nav-menu-item"><a href="#" class="nav-menu-link">About Us</a></li>
+            <li class="nav-menu-item"><a href="#" class="nav-menu-link">Contact</a></li>
+        </ul>
+
+    </nav>
+
     <header>
-        <nav class="nav"></nav>
         <section class="hero">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto minima</h1>
+
+            <div class="hero-img"> <img src="./img/black-friday-sale-png-photo.png"></div>
+            <div class="hero-text">
+                <h1>The countdown begins for Great <span> BLACK FRIDAY </span>! </h1>
+
+            </div>
         </section>
     </header>
 
@@ -25,10 +43,9 @@
 
         <section class="seccount">
             <h2>In our newsletter Black Friday arrives earlier, subscribe and don't miss it!</h2>
+            <div class="count"></div>
 
-            <div class="count">
-
-            </div>
+            <button class="shop"> SHOP NOW</button>
         </section>
 
 
@@ -64,9 +81,13 @@
 
 
 
+    <footer>
+        <p> © The images used are free to use on the FreePick website. Commercial use of these is not permitted.</p>
+    </footer>
 
     <script src="./js/simplyCountdown.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
+
 
 </html>

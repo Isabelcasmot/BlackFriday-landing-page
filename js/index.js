@@ -1,4 +1,6 @@
 // Get Data
+const navToggle = document.querySelector(".nav-toggle");
+const navMenu = document.querySelector(".nav-menu");
 const nameInput = document.querySelector("#name");
 const email = document.querySelector("#email");
 const phone = document.querySelector("#phone");
@@ -6,7 +8,15 @@ const success = document.querySelector("#success");
 const errorNodes = document.querySelectorAll(".error")
 
 
-// Validate data
+
+
+navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("nav-menu_visible")
+});
+
+
+
+// Validate data form
 
 function validateForm() {
 
